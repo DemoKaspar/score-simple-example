@@ -24,6 +24,8 @@ containers:
 
 # Define the resources that this service needs
 resources:
+  file-storage:
+    type: s3
   dns: # We need a DNS record to point to the service 
     type: dns
   db:  # We need a database to store data
